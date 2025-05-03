@@ -1,10 +1,6 @@
-import {Instantiator} from "SpectaclesSyncKit/Components/Instantiator"
-import {InstantiationOptions} from "SpectaclesSyncKit/Components/Instantiator"
-import {SessionController } from "SpectaclesSyncKit/Core/SessionController"
-import {StorageProperty} from "SpectaclesSyncKit/Core/StorageProperty"
-import {SyncEntity} from "SpectaclesSyncKit/Core/SyncEntity"
-import {SyncKitLogger} from "SpectaclesSyncKit/Utils/SyncKitLogger"
-import { SIK } from './SpectaclesInteractionKit/SIK';
+import { SIK } from "./SpectaclesSyncKit/SpectaclesInteractionKit/SIK"
+import { Instantiator } from "./SpectaclesSyncKit/Components/Instantiator"
+import { InstantiationOptions } from "./SpectaclesSyncKit/Components/Instantiator"
 
 @component
 export class PinchExample extends BaseScriptComponent {
