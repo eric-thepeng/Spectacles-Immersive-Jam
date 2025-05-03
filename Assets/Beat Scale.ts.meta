@@ -1,0 +1,48 @@
+- !<AssetImportMetadata/7b4b2a72-8aa2-4883-9556-98cb0bbc14f8>
+  ImportedAssetIds:
+    TypeScriptAsset: !<reference> ce417d8d-46b4-47ce-8166-3909b033ef89
+  ImporterName: TypeScriptAssetImporter
+  PrimaryAsset: !<reference> ce417d8d-46b4-47ce-8166-3909b033ef89
+  PackageType: NotAPackage
+  PackagePolicy: CannotBeUnpacked
+  ExtraData:
+    {}
+  AssetDataMap:
+    TypeScriptAsset: !<own> 9ac18ab7-05c8-4859-bd36-8c6b12fb0f25
+  DependentFiles:
+    []
+  ImporterSettings: !<AssetImporterSettings>
+    {}
+  CompressionSettings: !<own> 00000000-0000-0000-0000-000000000000
+- !<TypeScriptAssetData/9ac18ab7-05c8-4859-bd36-8c6b12fb0f25>
+  SvgIcon: ""
+  Description: ""
+  InternalVersion: 0
+  VersionMajor: 0
+  VersionMinor: 0
+  VersionPatch: 0
+  ComponentUid: 14b297f6-5426-4956-8fa7-67683e39a1f6
+  ExportUid: 00000000-0000-0000-0000-000000000000
+  CurrentVisibility: Editable
+  MaxVisibility: Editable
+  ScriptInputsHidden:
+    bpm: false
+    maxScale: false
+    minScale: false
+    smoothing: false
+  ScriptTypesHidden:
+    {}
+  DeclarationFile: !<reference> 00000000-0000-0000-0000-000000000000
+  DefaultScriptInputs:
+    - minScale: 0.900000
+      maxScale: 1.200000
+      bpm: !<float> 120.000000
+      smoothing: 0.150000
+  ScriptTypes:
+    -
+      {}
+  InputLines:
+    - // @input float minScale = 0.9
+    - // @input float maxScale = 1.2
+    - // @input float bpm = 120
+    - // @input float smoothing = 0.15

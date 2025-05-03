@@ -26,13 +26,15 @@
   CurrentVisibility: Editable
   MaxVisibility: Editable
   ScriptInputsHidden:
-    {}
+    audioComponents: false
+    intervalSeconds: false
   ScriptTypesHidden:
     {}
   DeclarationFile: !<reference> 00000000-0000-0000-0000-000000000000
   DefaultScriptInputs:
-    -
-      {}
+    - audioComponents: !<reference.AudioComponent[]>
+        []
+      intervalSeconds: !<float> 1.000000
   ScriptTypes:
     -
       {}

@@ -24,7 +24,7 @@ metaInfo:
     []
   tags:
     []
-  lensName: Connected Starter
+  lensName: Space Jam
   lensDescriptors:
     []
   lensApplicability:
@@ -33,7 +33,7 @@ metaInfo:
   lensClientCompatibilities:
     - Spectacles
   platformBundlesEnabled: false
-  iconHash: b936f337a54af270aa11dd00387208f2
+  iconHash: 8a214ff39493d8867f2247fc9b56ff4d
   videoPreviewHash: ""
   fromTemplateName: SpectaclesConnected
   fromTemplateUrl: Lens Studio 5.7.2.25030805
