@@ -1,0 +1,98 @@
+- !<ObjectPrefab/f390e111-60fd-4a1d-a61d-b1728d97369c>
+  PackagePath: ""
+  objects:
+    - !<own> d8a20de6-412d-4285-87e2-b5cbb320112e
+  LazyLoading: false
+  RetainAssets: true
+- !<ScriptComponent/144fcb95-2aa9-4cda-a2a2-4b72a79d3eee>
+  PrefabRemaps:
+    []
+  Name: Instantiator
+  Enabled: true
+  ScriptAsset: !<reference> 0f0500cb-c58a-434d-a171-94167130d106
+  ScriptInputsDefault:
+    spawnerOwnsObject: true
+    autoInstantiate: true
+    autoInstantiatePrefabs: true
+    persistenceString: true
+    autoInstantiateOwnershipString: true
+  ScriptTypesDefault:
+    {}
+  ScriptInputs:
+    "":
+      prefabs: !<reference.ObjectPrefab[]>
+        - !<reference> 3a9a0cd9-e857-46d9-9f62-c06e7f0550b1
+      spawnerOwnsObject: false
+      spawnAsChildren: true
+      spawnUnderParent: !<reference.SceneObject> 806a2687-0f72-4b4a-8d6c-8f67ce7d4b83
+      autoInstantiate: false
+      autoInstantiatePrefabs: !<reference.ObjectPrefab[]>
+        []
+      persistenceString: Session
+      autoInstantiateOwnershipString: Unowned
+  ScriptTypes:
+    "":
+      {}
+- !<ScriptComponent/2eb001fb-3f76-4519-881e-0001e9094373>
+  PrefabRemaps:
+    []
+  Name: PinchExample
+  Enabled: true
+  ScriptAsset: !<reference> 019b1943-0b05-421c-9160-39c9d084480d
+  ScriptInputsDefault:
+    {}
+  ScriptTypesDefault:
+    {}
+  ScriptInputs:
+    "":
+      prefabObj: !<reference.ObjectPrefab> 3a9a0cd9-e857-46d9-9f62-c06e7f0550b1
+      instantiator: !<MappingBased.Instantiator> 144fcb95-2aa9-4cda-a2a2-4b72a79d3eee
+  ScriptTypes:
+    "":
+      {}
+- !<SceneObject/806a2687-0f72-4b4a-8d6c-8f67ce7d4b83>
+  PrefabRemaps:
+    []
+  Name: Instantiation
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> 144fcb95-2aa9-4cda-a2a2-4b72a79d3eee
+- !<SceneObject/cd8ebcdd-eba4-4ec9-ac9a-3dc0a1e0552c>
+  PrefabRemaps:
+    []
+  Name: Pinch Spawn
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> 2eb001fb-3f76-4519-881e-0001e9094373
+- !<SceneObject/d8a20de6-412d-4285-87e2-b5cbb320112e>
+  PrefabRemaps:
+    []
+  Name: Interaction Manager
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    - !<own> cd8ebcdd-eba4-4ec9-ac9a-3dc0a1e0552c
+    - !<own> 806a2687-0f72-4b4a-8d6c-8f67ce7d4b83
+  Components:
+    []

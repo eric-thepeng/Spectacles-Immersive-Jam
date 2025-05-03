@@ -1,0 +1,123 @@
+- !<AssetImportMetadata/49e43e44-c802-4ecb-935a-9756ebf06796>
+  ImportedAssetIds:
+    ObjectPrefab: !<reference> f390e111-60fd-4a1d-a61d-b1728d97369c
+  ImporterName: ObjectPrefabImporter
+  PrimaryAsset: !<reference> f390e111-60fd-4a1d-a61d-b1728d97369c
+  PackageType: NotAPackage
+  PackagePolicy: CannotBeUnpacked
+  ExtraData:
+    {}
+  AssetDataMap:
+    ObjectPrefab: !<own> a7b751ac-a1a7-424c-8257-670a44b1dc18
+  DependentFiles:
+    []
+  ImporterSettings: !<AssetImporterSettings>
+    {}
+  CompressionSettings: !<own> 00000000-0000-0000-0000-000000000000
+- !<SceneObject/3be051b8-17f3-4e04-b6fa-b4dcd89a57c8>
+  PrefabRemaps:
+    []
+  Name: Instantiation
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> ba6d752d-ac41-4b58-9b1d-db6365ef8cb5
+- !<ScriptComponent/3caf958c-b96c-4b5b-91bd-e2236243d59f>
+  PrefabRemaps:
+    []
+  Name: PinchExample
+  Enabled: true
+  ScriptAsset: !<reference> 019b1943-0b05-421c-9160-39c9d084480d
+  ScriptInputsDefault:
+    {}
+  ScriptTypesDefault:
+    {}
+  ScriptInputs:
+    "":
+      prefabObj: !<reference.ObjectPrefab> 3a9a0cd9-e857-46d9-9f62-c06e7f0550b1
+      instantiator: !<MappingBased.Instantiator> ba6d752d-ac41-4b58-9b1d-db6365ef8cb5
+  ScriptTypes:
+    "":
+      {}
+- !<ObjectPrefab/51b27d47-5a2e-451c-84d4-1fb0b1adb035>
+  PackagePath: ""
+  objects:
+    - !<own> 8f8bf8e8-3101-4419-8025-9b0519522ef2
+  LazyLoading: false
+  RetainAssets: true
+- !<SceneObject/61104c70-9e1e-4172-a380-4397ca3a9a56>
+  PrefabRemaps:
+    []
+  Name: Pinch Spawn
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> 3caf958c-b96c-4b5b-91bd-e2236243d59f
+- !<SceneObject/8f8bf8e8-3101-4419-8025-9b0519522ef2>
+  PrefabRemaps:
+    []
+  Name: Interaction Manager
+  Enabled: true
+  Layers: 1
+  LocalTransform:
+    position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    hasSegmentScaleCompensation: false
+  Children:
+    - !<own> 61104c70-9e1e-4172-a380-4397ca3a9a56
+    - !<own> 3be051b8-17f3-4e04-b6fa-b4dcd89a57c8
+  Components:
+    []
+- !<ObjectPrefabAssetData/a7b751ac-a1a7-424c-8257-670a44b1dc18>
+  SourceRemaps:
+    - 144fcb95-2aa9-4cda-a2a2-4b72a79d3eee: ba6d752d-ac41-4b58-9b1d-db6365ef8cb5
+    - 2eb001fb-3f76-4519-881e-0001e9094373: 3caf958c-b96c-4b5b-91bd-e2236243d59f
+    - 806a2687-0f72-4b4a-8d6c-8f67ce7d4b83: 3be051b8-17f3-4e04-b6fa-b4dcd89a57c8
+    - cd8ebcdd-eba4-4ec9-ac9a-3dc0a1e0552c: 61104c70-9e1e-4172-a380-4397ca3a9a56
+    - d8a20de6-412d-4285-87e2-b5cbb320112e: 8f8bf8e8-3101-4419-8025-9b0519522ef2
+    - f390e111-60fd-4a1d-a61d-b1728d97369c: 51b27d47-5a2e-451c-84d4-1fb0b1adb035
+  SourceState: !<own> 51b27d47-5a2e-451c-84d4-1fb0b1adb035
+- !<ScriptComponent/ba6d752d-ac41-4b58-9b1d-db6365ef8cb5>
+  PrefabRemaps:
+    []
+  Name: Instantiator
+  Enabled: true
+  ScriptAsset: !<reference> 0f0500cb-c58a-434d-a171-94167130d106
+  ScriptInputsDefault:
+    spawnerOwnsObject: true
+    autoInstantiate: true
+    autoInstantiatePrefabs: true
+    persistenceString: true
+    autoInstantiateOwnershipString: true
+  ScriptTypesDefault:
+    {}
+  ScriptInputs:
+    "":
+      prefabs: !<reference.ObjectPrefab[]>
+        - !<reference> 3a9a0cd9-e857-46d9-9f62-c06e7f0550b1
+      spawnerOwnsObject: false
+      spawnAsChildren: true
+      spawnUnderParent: !<reference.SceneObject> 3be051b8-17f3-4e04-b6fa-b4dcd89a57c8
+      autoInstantiate: false
+      autoInstantiatePrefabs: !<reference.ObjectPrefab[]>
+        []
+      persistenceString: Session
+      autoInstantiateOwnershipString: Unowned
+  ScriptTypes:
+    "":
+      {}

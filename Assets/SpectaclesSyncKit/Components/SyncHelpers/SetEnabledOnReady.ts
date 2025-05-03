@@ -8,7 +8,7 @@ import {SyncEntity} from "../../Core/SyncEntity"
  * will be disabled, and objects in notReadyObjects will be enabled.
  * As soon as the SyncEntity or SessionController are ready (including when the script first runs),
  * objects in notReadyObjects will be disabled, and objects in readyObjects will be enabled.
- */
+ */ 
 @component
 export class SetEnabledOnReady extends BaseScriptComponent {
   @ui.group_start("Entity Target")
